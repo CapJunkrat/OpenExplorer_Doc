@@ -1,1 +1,1 @@
-# OpenExplorer2
+# OpenExplorer Doc
