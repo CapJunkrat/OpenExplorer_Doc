@@ -28,17 +28,16 @@ project = 'Horizon J5 AI Toolchain User Guide'
 copyright = '2022, Horizon Robotics'
 author = 'Horizon Robotics'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx.ext.autodoc", "sphinx.ext.doctest", "sphinx.ext.autosummary",
-    "sphinx.ext.intersphinx", "sphinx.ext.todo", "sphinx.ext.coverage",
-    "sphinx.ext.napoleon", "sphinx.ext.mathjax", "myst_parser",
-    "sphinxemoji.sphinxemoji","sphinx.ext.githubpages","sphinx_markdown_tables",
+    # "sphinx.ext.autodoc", "sphinx.ext.doctest", "sphinx.ext.autosummary",
+    # "sphinx.ext.intersphinx", "sphinx.ext.todo", "sphinx.ext.coverage",
+    # "sphinx.ext.napoleon", "sphinx.ext.mathjax", "myst_parser",
+    # "sphinxemoji.sphinxemoji","sphinx.ext.githubpages","sphinx_markdown_tables",
     "sphinx_rtd_theme"
 ]
 
@@ -57,7 +56,6 @@ language = 'zh_CN'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -72,8 +70,10 @@ html_static_path = ['_static']
 
 # colored text feature
 
+
 def setup(app):
     app.add_css_file('css/custom-style.css')
+
 
 rst_epilog = '\n.. include:: .custom-style.rst\n'
 
